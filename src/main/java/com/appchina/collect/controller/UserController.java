@@ -22,6 +22,6 @@ public class UserController {
         List<User> user = userDaoService.getUserByUserCode(1);
         return user;
     }
-    
+
 
 }

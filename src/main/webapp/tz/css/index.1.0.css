@@ -1,0 +1,149 @@
+body{
+	margin: 0;
+	font-family: "Microsoft Yahei";
+}
+ul,li{
+	padding: 0;
+	margin: 0;
+	list-style:none;
+}
+.header{
+	border:2px solid;
+	border-radius:25px;
+	height: 1.2rem;
+	background: #226089;
+	color: #fff;
+	text-align: center;
+	line-height: 1.2rem;
+	font-size: .4rem;
+}
+.fixedTitle{
+	font-size: .28rem;
+	width: 100%;
+	color: #226089;
+	padding: 0 .35rem;
+	box-sizing:border-box;
+	line-height: 1.18rem;
+	height: 1.2rem;
+	border: .02rem solid #eee;
+	font-weight: bold;
+	background: #fff;
+}
+.fixedTitle2{
+	font-size: .28rem;
+	font-weight: bold;
+	width: 100%;
+	color: #226089;
+	padding: 0 .35rem;
+	box-sizing:border-box;
+	line-height: 1.18rem;
+	height: 1.2rem;
+	border: .02rem solid #eee;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow:0.01rem .01rem .1rem #ddd;
+	display: none;
+}
+.item{
+	border-bottom: .02rem solid #eee;
+	box-sizing:border-box;
+	padding: 0 .35rem;
+}
+.item.active{
+	height: 4.52rem;
+}
+.answerList{
+	width: 100%;
+	overflow: hidden;
+	display: none;
+	margin: .7rem 0 .4rem;
+	font-weight: bold;
+}
+.answerList .answerItem{
+	float: left;
+	width: 20%;
+	font-size: .32rem;
+	color: #226089;
+	border: .02rem solid #226089;
+	box-sizing:border-box;
+	border-right: none;
+	padding: .1rem 0;
+	text-align: center;
+	
+}
+.answerItem.active{
+	background: #226089;
+	color: #fff;
+}
+.answerList .answerItem:last-child{
+	border-right: .02rem solid #226089;
+	
+}
+.answerTitle{
+	color: #bdbdac;
+	font-size: .32rem;
+	height: 1.12rem;
+	overflow:hidden;
+	white-space: normal;
+	line-height: 1.12rem;
+
+	
+}
+.answerTitle i{
+	font-weight: bold;
+	font-style: normal;
+}
+.noneAnswer{
+	
+}
+.active .answerTitle{
+	color: #226089;
+	height: auto;
+}
+.active .answerTitle span{
+	display: block;
+}
+.active .answerTitle span:first-child{
+	line-height: 1.12rem;
+	margin-bottom: .22rem;
+}
+.active .answerTitle span:last-child{
+	height: 1.16rem;
+	display: flex;
+	display: -webkit-flex;
+	align-items:center;
+	line-height: 1.5;
+	font-weight: bold;
+	
+}
+.active .answerList{
+	display: block;
+}
+
+.answered.item{
+	height: 2.88rem;
+}
+.answered .answerTitle{
+	height: 0.9rem;
+	padding: .38rem 0;
+	line-height: 1.5;
+	
+}
+.answered .answerList{
+	display: block;
+	margin: .05rem 0 .4rem;
+}
+.btn{
+	width: 3.0rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background:#226089;
+	color: #fff;
+	text-align: center;
+	margin: 1rem auto 1rem; 
+	font-size: .4rem;
+	border-radius: .8rem;
+
+}

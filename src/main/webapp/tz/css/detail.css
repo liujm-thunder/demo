@@ -1,0 +1,83 @@
+body,html{
+	height: 100%;
+}
+body{
+	margin: 0;
+	font-family: "Microsoft Yahei";
+	background: url('../images/bg.jpg') no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+ul,li,body,html{
+	padding: 0;
+	margin: 0;
+	list-style:none;
+}
+.main{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 6.1rem;
+	height: 9.4rem;
+	border: .02rem solid #ccc;
+	border-radius: .2rem;
+	box-sizing:border-box;
+	padding: .3rem;
+	background: #fff;
+}
+.top{
+	font-size: .36rem;
+	text-align: center;
+	padding-top: .15rem;
+	line-height: .6rem;
+}
+.mid{
+	/*height: 7.1rem;*/
+	height: 7.8rem;
+	overflow-y:scroll;
+
+}
+.bot{
+	display: none;
+	font-size: .32rem;
+	text-align: center;
+	background: #226089;
+	color: #fff;
+	width: 4.9rem;
+	height: .7rem;
+	line-height: .7rem;
+	margin: .1rem auto 0;
+	border-radius: .1rem;
+}
+.item{
+	font-size: .28rem;
+	padding: .16rem 0;
+}
+.item span:first-child{
+	font-weight: bold;
+}
+.title{
+	font-size: .36rem;
+	font-weight: bold;
+	padding: .2rem 0;
+}
+.red{
+	color: #c00101;
+}
+
+.codeImg{
+	width: 100%;
+    margin: .5rem auto 0;
+}
+.codeImg img{
+	width: 100%;
+}
+.code p{
+	text-align: center;
+    font-size: .32rem;
+    margin-top: 0;
+    
+}

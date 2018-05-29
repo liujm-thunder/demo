@@ -4,6 +4,7 @@ import com.appchina.collect.domain.User;
 import com.appchina.collect.service.UserDaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -17,10 +18,15 @@ public class UserController {
     private UserDaoService userDaoService;
     @RequestMapping(value = "/user/man",method = RequestMethod.GET,produces = "application/json;charset=utf-8")
     @ResponseBody
-    public List<User> getUserByUserCode(){
-        System.out.println("11111");
-        List<User> user = userDaoService.getUserByUserCode(1);
-        return user;
+    public JsonResult<List<User>> getUserByUserCode(){
+        List<User> list = userDaoService.getUserByUserCode(1);
+        return new JsonResult<List<User>>(true,"OK",list);
+    }
+
+
+    @RequestMapping("/index")
+    public String index(){
+        return "index.htm";
     }
 
 

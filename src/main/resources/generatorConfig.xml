@@ -15,7 +15,7 @@
 		</commentGenerator>
 		<!-- JDBC -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://172.16.30.25:3306/wa" userId="mproduction"
+			connectionURL="jdbc:mysql://172.16.30.25:3306/mproduction" userId="mproduction"
 			password="16021incloud">
 		</jdbcConnection>
 
@@ -31,7 +31,7 @@
 		</javaModelGenerator>
 
 		<!-- Mapper XML -->
-		<sqlMapGenerator targetPackage="com.appchina.collect.utils"
+		<sqlMapGenerator targetPackage="mappers"
 			targetProject="src/main/resources">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
@@ -51,7 +51,7 @@
 		columnOverride 自定义规则 数据库字段 -> 属性
 		ignoreColumn 不生成某字段
 		 -->
-		<table tableName="wa_login" domainObjectName="Login" modelType="flat" enableInsert="true"
+		<table tableName="qiyuesuo_dev_record" domainObjectName="AuthRecord" modelType="flat" enableInsert="true"
 			   enableUpdateByPrimaryKey="false"
 			enableCountByExample="false" enableDeleteByExample="false"
 			enableSelectByExample="false" enableUpdateByExample="false">

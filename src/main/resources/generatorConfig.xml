@@ -51,8 +51,8 @@
 		columnOverride 自定义规则 数据库字段 -> 属性
 		ignoreColumn 不生成某字段
 		 -->
-		<table tableName="qiyuesuo_dev_record" domainObjectName="AuthRecord" modelType="flat" enableInsert="true"
-			   enableUpdateByPrimaryKey="false"
+		<table tableName="app_set_recommend_app" domainObjectName="AppSetRecommendApp" modelType="flat" enableInsert="true"
+			   enableUpdateByPrimaryKey="true"
 			enableCountByExample="false" enableDeleteByExample="false"
 			enableSelectByExample="false" enableUpdateByExample="false">
 			<property name="useActualColumnNames" value="false" />

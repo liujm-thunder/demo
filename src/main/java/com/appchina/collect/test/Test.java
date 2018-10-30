@@ -1,18 +1,10 @@
 package com.appchina.collect.test;
 
 
-import com.appchina.check.ApkChecker;
 import com.appchina.check.ApkInfo;
-import com.appchina.check.Result;
-import com.appchina.check.ResultItem;
 
 import java.io.File;
-import java.io.UnsupportedEncodingException;
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.Charset;
-
-import static com.appchina.check.UtilsKt.getWorkspacePath;
+import java.util.ArrayList;
 
 public class Test {
 
@@ -54,6 +46,30 @@ public class Test {
 
 
 
+    }
+
+    class TreeNode {
+        int val = 0;
+        TreeNode left = null;
+        TreeNode right = null;
+
+        public TreeNode(int val) {
+            this.val = val;
+
+        }
+    }
+
+
+    public ArrayList<ArrayList<Integer>> FindPath(TreeNode root, int target) {
+        if (root==null)return null;
+        ArrayList<ArrayList<Integer>> lists = new ArrayList<>();
+        if(root.left==null&&root.val==target){
+            ArrayList<Integer> list = new ArrayList<>();
+            list.add(root.val);
+            lists.add(list);
+        }
+
+        return  lists;
     }
 
 
